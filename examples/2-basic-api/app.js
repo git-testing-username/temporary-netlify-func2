@@ -3,9 +3,6 @@ const result = document.querySelector(".result");
 const fetchData = async () => {
   try {
     // const { data } = await axios.get("/api/2-basic-api");
-    const { data } = await axios.get(
-      "https://zesty-truffle-af70e7.netlify.app/api/2-basic-api"
-    );
     console.log(data);
     const products = data
       .map((product) => {
